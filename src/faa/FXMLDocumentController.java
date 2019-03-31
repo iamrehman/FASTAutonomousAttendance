@@ -52,9 +52,9 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private void loginHandler(ActionEvent event) throws IOException {
-         if(password.getText().equals("rehman") && idLogin.getText().equals("rehman")){
+         if(true || password.getText().equals("rehman") && idLogin.getText().equals("rehman")){
 
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("dbSelect.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("home.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
             /* first close this window */
             Stage st = (Stage) login.getScene().getWindow();
