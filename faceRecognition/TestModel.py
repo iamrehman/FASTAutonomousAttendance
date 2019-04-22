@@ -17,19 +17,18 @@ def getMin(images, tocheck_encodings):
     return np.argmin(distance)
 
 #images to check 
-testImages=image_files_in_folder("testData")
+testImages=image_files_in_folder("C:\\Users\\iamrehman\\Pictures\\Camera Roll")
 
 #images already stored
-TrainedImages=image_files_in_folder("data")
+TrainedImages=image_files_in_folder("D:\\workspace\\FASTAutonomousAttendance\\faceRecognition\\data")
 
 Timages=[]
 for names in TrainedImages:
-    name= ''.join(i for i in names if not i.isdigit())
-    base=os.path.basename(name)
-    Timages. append( os.path.splitext(base)[0])
+    base=os.path.basename(names)
+    Timages.append( os.path.splitext(base)[0])
 
 Timages=np.array(Timages)
-saved_feats=np.load("FAA_Encodings.npy")
+saved_feats=np.load("D:\\workspace\\FASTAutonomousAttendance\\faceRecognition\\FAA_Encodings.npy")
 
 result=[]
 
@@ -46,7 +45,7 @@ for image in testImages:
         print ("no face found in", image )
         continue
 
-    matches= fr.compare_faces(saved_feats,feats, tolerance=.50)
+    matches= fr.compare_faces(saved_feats,feats, tolerance=.60)
     matches=np.array(matches)
     index= np.ma.where(matches==True)
   
@@ -63,9 +62,13 @@ for image in testImages:
     else:
          result.append(values[0])    
 
-print()
-print("model predictions: ")
-print(result)
+out_file=open("D:\\workspace\\FASTAutonomousAttendance\\faceRecognition\\result.txt",'w')
+for id in result:
+    out_file.write(id+"\n")
+out_file.close()
+
+
+
 
 
 

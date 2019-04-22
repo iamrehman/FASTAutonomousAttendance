@@ -65,9 +65,8 @@ print("training model....")
 
 #getting encodings
 feats= get_face_encodings(images)
-np.save("FAA_encodings",feats)
 print("saving features to file 'FAA_eoncodings' ....")
 #saving face features 
-np.save("FAA_eoncodings",feats)
+np.save("FAA_Encodings",feats)
 
 print("model trained successfully....")

@@ -2,7 +2,9 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXRippler?>
 <?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.effect.Blend?>
 <?import javafx.scene.image.Image?>
@@ -10,7 +12,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="506.0" prefWidth="671.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="faa.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="506.0" prefWidth="671.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="faa.FXMLDocumentController">
    <children>
       <JFXButton fx:id="login" buttonType="RAISED" layoutX="89.0" layoutY="269.0" onAction="#loginHandler" prefHeight="58.0" prefWidth="143.0" ripplerFill="#ebebeb" style="-fx-background-color: #944dff;" text="Login" textOverrun="CENTER_WORD_ELLIPSIS">
          <font>
@@ -41,5 +43,11 @@
             <Image url="@../logo.jpeg" />
          </image>
       </ImageView>
+      <JFXRippler layoutX="253.0" layoutY="414.0" />
+      <Hyperlink fx:id="signup" layoutX="89.0" layoutY="353.0" onAction="#signupcontroller" prefHeight="68.0" prefWidth="184.0" text="click here to sign up?" textAlignment="CENTER" textFill="#ff0808">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Hyperlink>
    </children>
 </AnchorPane>

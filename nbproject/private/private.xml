@@ -3,11 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/workspace/FASTAutonomousAttendance/src/faa/FXMLDocument.fxml</file>
-            <file>file:/D:/workspace/FASTAutonomousAttendance/src/faa/home.fxml</file>
-            <file>file:/D:/workspace/FASTAutonomousAttendance/src/faa/FXMLDocumentController.java</file>
             <file>file:/D:/workspace/FASTAutonomousAttendance/src/faa/HomeController.java</file>
-            <file>file:/D:/workspace/FASTAutonomousAttendance/src/faa/warning.fxml</file>
+            <file>file:/D:/workspace/FASTAutonomousAttendance/src/faa/signUPController.java</file>
+            <file>file:/D:/workspace/FASTAutonomousAttendance/src/faa/TimePickerController.java</file>
+            <file>file:/D:/workspace/FASTAutonomousAttendance/src/faa/QuerryController.java</file>
         </group>
     </open-files>
 </project-private>
